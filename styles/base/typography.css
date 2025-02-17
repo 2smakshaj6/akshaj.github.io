@@ -1,0 +1,14 @@
+  /* Ensures the Footer Stays at Bottom Properly */
+#main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+  
+main {
+    flex: 1;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2000px;    /*Consider removing or increasing if you want more width  */
+} 
+  

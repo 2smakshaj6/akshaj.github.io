@@ -1,0 +1,139 @@
+/* === Academia Section === */
+#academia {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+/* Section Heading */
+#academia h2 {
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 30px;
+}
+
+/* Row Card Layout */
+.row-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row-card:hover {
+    transform: scale(1.02);
+}
+
+/* Title Container */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h3 {
+    color: gold;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Sub Cards (for education details) */
+.sub-cards {
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 768px) {
+    .sub-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Individual Sub-Card */
+.sub-card {
+    display: flex;
+    align-items: center; /* Centers image & text in the same line vertically */
+    justify-content: flex-start; /* Keeps image on the left */
+    flex-direction: column;
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sub-card:hover {
+    background: #444;
+    transform: scale(1.02);
+}
+
+
+.sub-card h4 {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: flex;
+
+    
+}
+
+.sub-card p {
+    color: #d1d1d1;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    
+}
+
+.sub-card .timeline {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 8px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    
+}
+
+/* Image Styling */
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+   
+}
+
+/* CTA Button */
+.btn-text {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-text:hover {
+    background: gold;
+    color: #222;
+}

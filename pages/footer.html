@@ -1,0 +1,26 @@
+<footer class="footer">
+  <!-- Social Icons -->
+  <div class="footer-icons">
+      <a href="https://github.com/2smakshaj6" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/akshajsm" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://youtube.com/@blutreetechnologynetworks6518" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:akshajsh@buffalo.edu" class="email-icon"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- Footer Divider -->
+  <div class="footer-divider"></div>
+
+  <!-- Footer Copyright -->
+  <p class="footer-text">© 2025<span id="demo"></span> Akshaj Shivara Madhusudhan. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript for Dynamic Year 
+<script>
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script> -->
+
+<script>
+  const d = new Date();
+  let year = d.getFullYear();
+  document.getElementById("demo").innerHTML = year;
+  </script>

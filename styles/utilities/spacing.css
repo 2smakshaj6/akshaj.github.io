@@ -1,0 +1,8 @@
+/* === Section Divider === */
+.section-divider {
+  width: 80%; /* Makes it slightly narrower than full width */
+  height: 2px; /* Adjust thickness */
+  background: linear-gradient(to right, transparent, gold, transparent); /* Gradient effect */
+  margin: 50px auto; /* Adds spacing around the divider */
+  border-radius: 5px; /* Optional: rounded edges */
+}

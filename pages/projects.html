@@ -1,0 +1,34 @@
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+      
+     <!-- <div class="project-card" data-id="siem-implementation">
+          <h3>SIEM Implementation</h3>
+          <p>Log analysis and threat detection using Wazuh.</p>
+      </div> -->
+
+      <!--<div class="project-card" data-id="cloud-security-audit">
+          <h3>Cloud Security Audit</h3>
+          <p>Identifying AWS security misconfigurations.</p>
+      </div> -->
+
+      <div class="project-card" data-id="personal-vpn-setup">
+          <h3>Personal VPN Setup</h3>
+          <p>Deploying WireGuard VPN on AWS for secure browsing.</p>
+      </div>
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".project-card").forEach(card => {
+          card.addEventListener("click", function () {
+              const projectId = this.getAttribute("data-id");
+              if (projectId) {
+                  window.location.href = `project.html?id=${projectId}`;
+              }
+          });
+      });
+  });
+</script>

@@ -1,0 +1,12 @@
+
+
+/* ================== Divider ================== */
+.section-divider {
+    width: 80%;
+    margin: 50px auto;
+    border-top: 2px solid var(--primary-amber);
+  }
+  
+  
+  
+  

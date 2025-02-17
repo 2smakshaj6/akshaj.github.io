@@ -1,0 +1,72 @@
+/* ================== Global Theme Variables ================== */
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'YourCustomFont';
+  src: url('/assets/fonts/YourCustomFont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Dark Mode (Default) */
+:root {
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --navbar-bg: rgba(0, 0, 0, 0.9);
+  --button-bg: #ffbf00;
+  --button-hover: #cc8400;
+  --social-icon-color: #ddd;
+}
+
+/* Apply Global Theme */
+html, body {
+  scroll-behavior: smooth; /* Ensures smooth scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ================== Buttons ================== */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increased spacing between buttons */
+  margin-top: 15px; /* More spacing from icons above */
+}
+
+button, .cta-btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #ffbf00;
+  color: #ffbf00;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, .cta-btn:hover {
+  background-color: #ffaa00;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* ================== Social Icons ================== */
+.social-icons {
+  display: flex;
+  gap: 2rem; /* Increased spacing */
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--social-icon-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: var(--button-bg);
+}

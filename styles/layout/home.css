@@ -1,0 +1,98 @@
+/* ================== Home Section ================== */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 100px 40px;
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Profile Info */
+.profile-info {
+  flex: 1;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+/* Profile Tagline */
+.profile-tagline {
+  font-size: 1.2rem;
+  color: #d1d1d1;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* === Fix Buttons === */
+.profile-buttons {
+  display: flex;
+  gap: 20px; /* Increased spacing between buttons */
+  margin-top: 20px;
+  /* justify-content: center; */
+}
+
+/* CTA Buttons */
+.profile-buttons a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid gold;
+  color: gold;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.profile-buttons a:hover {
+  background-color: gold;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* About Me Section */
+.about-me {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #d1d1d1;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}

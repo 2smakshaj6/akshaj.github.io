@@ -1,0 +1,12 @@
+/* Define CSS Variables */
+:root {
+    --primary-black: #000;
+    --primary-white: #fff;
+    --primary-amber: #ffbf00;
+    --primary-grey: #2c2c2c;
+    --secondary-neon-green: #39ff14;
+    --secondary-neon-orange: #ff6700;
+    --secondary-neon-blue: #00aaff;
+    --secondary-neon-purple: #8a2be2;
+  }
+  
