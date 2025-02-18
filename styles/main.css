@@ -14,8 +14,8 @@
 @import url("layout/projects.css");
 
  @import url("utilities/spacing.css");
-/* @import url("utilities/colors.css");
+@import url("utilities/colors.css");
 @import url("utilities/animations.css");
-@import url("utilities/helpers.css"); */
+@import url("utilities/helpers.css"); 
 
 @import url("theme/theme.css");

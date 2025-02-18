@@ -1,34 +1,22 @@
+<!-- Projects Section -->
 <section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-container">
-      
-     <!-- <div class="project-card" data-id="siem-implementation">
-          <h3>SIEM Implementation</h3>
-          <p>Log analysis and threat detection using Wazuh.</p>
-      </div> -->
-
-      <!--<div class="project-card" data-id="cloud-security-audit">
-          <h3>Cloud Security Audit</h3>
-          <p>Identifying AWS security misconfigurations.</p>
-      </div> -->
-
-      <div class="project-card" data-id="personal-vpn-setup">
-          <h3>Personal VPN Setup</h3>
-          <p>Deploying WireGuard VPN on AWS for secure browsing.</p>
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>HomeLab</h3>
+        <p>Self-hosted security-hardened network with VPN, firewall, IDS, and SIEM.</p>
+        <a href="https://github.com/2smakshaj6/Projects/blob/main/homelab.md" class="btn-text" target="_blank">View</a>
       </div>
-
-  </div>
-</section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll(".project-card").forEach(card => {
-          card.addEventListener("click", function () {
-              const projectId = this.getAttribute("data-id");
-              if (projectId) {
-                  window.location.href = `project.html?id=${projectId}`;
-              }
-          });
-      });
-  });
-</script>
+      <div class="project-card">
+        <h3>Personal VPN Setup</h3>
+        <p>Deploying WireGuard VPN on AWS for secure browsing.</p>
+        <a href="https://github.com/2smakshaj6/Projects/blob/main/vpn.md" class="btn-text" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+        <h3>RealHeroS</h3>
+        <p>An Android app for emergency assistance and safety</p>
+        <a href="https://github.com/2smakshaj6/RealHeroS" class="btn-text" target="_blank">View</a>
+      </div>
+    </div>
+  </section>
+  

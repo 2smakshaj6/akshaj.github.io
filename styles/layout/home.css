@@ -7,6 +7,23 @@
   text-align: center;
   height: 100vh;
   padding: 100px 40px;
+  position: relative;
+  background: #000000; /* Pure black */
+  overflow: hidden;
+}
+
+/* Dynamic Floating Light */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150vw;
+  height: 150vh;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0) 60%);
+  animation: floatingLight 20s infinite linear alternate;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Profile Container */

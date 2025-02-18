@@ -1,8 +1,9 @@
 /* === Section Divider === */
 .section-divider {
-  width: 80%; /* Makes it slightly narrower than full width */
-  height: 2px; /* Adjust thickness */
-  background: linear-gradient(to right, transparent, gold, transparent); /* Gradient effect */
-  margin: 50px auto; /* Adds spacing around the divider */
-  border-radius: 5px; /* Optional: rounded edges */
+  width: 80%; 
+  height: 2px; 
+  background: linear-gradient(to right, transparent, gold, transparent); 
+  margin: 50px auto; 
+  border-radius: 5px;
+  box-shadow: 0px -4px 20px rgba(255, 215, 0, 0.3);
 }

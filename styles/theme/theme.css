@@ -1,12 +1,80 @@
 /* ================== Global Theme Variables ================== */
 @import "tailwindcss";
 
+/* Import Custom Fonts */
 @font-face {
-  font-family: 'YourCustomFont';
-  src: url('/assets/fonts/YourCustomFont.woff2') format('woff2');
+  font-family: 'Bangers';
+  src: url('/assets/fonts/Bangers/Bangers-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url('/assets/fonts/Red_Hat_Text/RedHatText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('/assets/fonts/Source_Code_Pro/SourceCodePro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === Apply Fonts to Elements === */
+body {
+  font-family: 'Red Hat Text', sans-serif; /* Default font */
+  font-size: 16px;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Source_Code_Pro', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /* color: gold; */
+}
+
+p, a, span {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+code, pre {
+  font-family: 'Source Code Pro', monospace;
+  background: #222;
+  color: #ffbf00;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+/* Improve Headings */
+/* h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+ Paragraph Improvements 
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #d1d1d1;
+} */
+
 
 /* Dark Mode (Default) */
 :root {

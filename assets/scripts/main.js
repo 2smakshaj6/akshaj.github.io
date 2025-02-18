@@ -25,6 +25,16 @@ window.addEventListener("scroll", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const someElement = document.querySelector(".some-class");
+
+  if (someElement) { 
+      someElement.classList.add("active");
+  } else {
+      console.warn("Element not found, skipping classList modification.");
+  }
+});
+
   
   
  

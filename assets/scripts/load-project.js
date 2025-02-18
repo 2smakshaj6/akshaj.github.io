@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const projectId = urlParams.get("id");
+    const projectId = urlParams.get("id"); // Get project ID from URL
 
     if (!projectId) {
         document.getElementById("project-content").innerHTML = "<h1>Project Not Found</h1>";
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const projectFile = `projects/${projectId}.md`; // Ensure correct path
+    const projectFile = `projects/${projectId}.md`; // Ensure the correct path
 
     console.log("Fetching:", projectFile); // Debugging
 
